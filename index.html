@@ -5,7 +5,7 @@
     <title>AquaThree's Blog | 主页 </title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="./favicon.ico">
     <link rel="stylesheet" href="./css/main.css"/>
 </head>
 
@@ -17,11 +17,11 @@
                 <h1><a>AquaThree's</a> Blog</h1>
                 <div id="nav">
                     <div id="button">
-                        <a href="/" onmouseover="openButtonAnim('line1')" onmouseout="closeButtonAnim('line1')">主页</a>
+                        <a href="./" onmouseover="openButtonAnim('line1')" onmouseout="closeButtonAnim('line1')">主页</a>
                         <div class="line" id="line1"></div>
                     </div>
                     <div id="button">
-                        <a href="/archives/" onmouseover="openButtonAnim('line2')" onmouseout="closeButtonAnim('line2')">归档</a>
+                        <a href="./mods/" onmouseover="openButtonAnim('line2')" onmouseout="closeButtonAnim('line2')">模组</a>
                         <div class="line" id="line2"></div>
                     </div>
                 </div>
@@ -43,7 +43,7 @@
         <div id="about">
             <div id="panel">
                 <div id="avatar">
-                    <img src="/images/avatar.png">
+                    <img src="./images/avatar.png">
                 </div>
                 <div id="name">
                    <h1>AquaThree</h1>
@@ -60,53 +60,11 @@
                         </h1>
                     </div>
                     <div id="links">
-                        <a href="./xinchun/" target="_blank" title="新春快乐!!!">祝福 新年快乐!!!</a>
+                        <a href="./404/" title="新春快乐!!!">祝福 新年快乐!!!</a>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Mods -->
-        <div id="mods">
-            <a class="mod button" id="avaritianeo" onclick="clickOpenPopupButton()" target="_blank" title="无尽贪婪 NeoForge 版本。">
-                <div id="logo">
-                    <img src="./images/avaritianeo.png">
-                </div>
-                <div id="title">
-                    无尽贪婪Neo
-                </div>
-                <div id="info">
-                    一个非官方的 Avaritia NeoForge 版本重制模组。
-                </div>
-                <div id="version">
-                    支持版本：1.20.4, 1.21, 1.21.1, 1.21.3
-                </div>
-                <div id="date">
-                    发布日期：2024-7-13
-                </div>
-            </a>
-        </div>
-        <!-- Popup -->
-        <div id="popup">
-            <popup id="avaritianeo">
-                <span id="close" onclick="clickClosePopupButton()">×</span>
-                <div id="panel">
-                   <div id="title">
-                       相关链接：
-                    </div>
-                    <div id="links">
-                        <a href="https://www.mcmod.cn/class/15521.html" target="_blank">Mod百科</a>
-                        <br>
-                        <a href="https://github.com/AquaThree/AvaritiaNeo" target="_blank">Github</a>
-                        <br>
-                        <a href="https://pan.baidu.com/s/1yr6i9dUnNUdDI9MhIGQ4_Q?pwd=bty7" target="_blank">百度网盘</a>
-                        <br>
-                        <a href="https://www.curseforge.com/minecraft/mc-mods/avaritianeo" target="_blank">CurseForge</a>
-                        <br>
-                        <a href="https://modrinth.com/mod/avaritianeo" target="_blank">Modrinth</a>
-                    </div>
-                </div>
-            </popup>
-         </div>
         <!-- Footer -->
         <div id="footer">
             <div class="copyright">

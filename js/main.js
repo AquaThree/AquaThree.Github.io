@@ -1,3 +1,5 @@
+this.onLoad();
+
 function onLoad() {
 }
 
@@ -20,12 +22,20 @@ function clickGoLearnMoreButton() {
     });
 }
 
-function clickOpenPopupButton() {
+function clickOpenPopupButton(index) {
+    var popup = document.getElementById("popup").children[index];
+    if(index == 0) {
+        popup.style.width = "400px";
+        popup.style.height = "225px";
+    } else if (index == 1) {
+        popup.style.width = "350px";
+        popup.style.height = "150px";
+    }
+    popup.style.display = "flex";
     document.getElementById("popup").style.display = "flex";
 }
 
-function clickClosePopupButton() {
+function clickClosePopupButton(index) {
     document.getElementById("popup").style.display = "none";
+    document.getElementById("popup").children[index].style.display = "none";
 }
-
-onLoad();

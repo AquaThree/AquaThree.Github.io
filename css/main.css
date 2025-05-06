@@ -22,12 +22,12 @@ p {
 }
 
 a {
-    color: rgba(255, 255, 255);
+    color: rgb(255, 255, 255);
     transition: 0.5s;
 }
 
 a:hover {
-    color: rgba(62, 190, 211);
+    color: rgb(62, 190, 211);
     transition: 0.5s;
 }
 
@@ -36,12 +36,12 @@ a:hover {
 }
 
 ::-webkit-scrollbar-track {
-    background-color: rgba(255, 255, 255);
+    background-color: rgb(255, 255, 255);
     border-radius: 8px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: rgba(62, 190, 211);
+    background-color: rgb(62, 190, 211);
     border-radius: 8px;
 }
 
@@ -74,16 +74,17 @@ a:hover {
     background-color: rgba(255, 255, 255, 0.4);
     backdrop-filter: blur(50px);
     line-height: 3.25em;
+    z-index: 9998;
 }
 
 #header #panel {
     width: 100%;
-    height: 3.25em;
+    height: 100%;
     transition: 0.5s;
 }
 
 #header #panel:hover {
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.1);
     transition: 0.5s;
 }
 
@@ -92,14 +93,14 @@ a:hover {
 }
 
 #header #panel h1 {
-    color: rgba(255, 255, 255, 0.9);
+    color: rgb(255, 255, 255, 0.9);
     position: absolute;
     left: 1.25em;
     transition: 0.3s;
 }
 
 #header #panel:hover h1 {
-    color: rgba(255, 255, 255, 1.0);
+    color: rgb(255, 255, 255);
     transition: 0.3s;
 }
 
@@ -110,7 +111,7 @@ a:hover {
 }
 
 #header #panel #nav a {
-    color: rgba(255, 255, 255);
+    color: rgb(255, 255, 255);
     padding: 0 1em 0 2em;
     text-decoration: none;
 }
@@ -118,7 +119,7 @@ a:hover {
 #header #panel #nav #button {
     cursor: pointer;
     display: inline-block;
-    color: rgba(255, 255, 255);
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
 
@@ -129,7 +130,7 @@ a:hover {
     height: 4px;
     top: -10px;
     left: 25px;
-    background-color: rgba(255, 255, 255);
+    background-color: rgb(255, 255, 255);
     border-radius: 4px;
     transform: scale3d(0, 1, 1);
     transition: 0.5s;
@@ -162,7 +163,6 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: f5f5f5;
     padding: 28em 0 28em 0;
 }
 
@@ -173,7 +173,7 @@ a:hover {
     position: absolute;
     width: 500px;
     height: 700px;
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.4);
     backdrop-filter: blur(50px);
     border-radius: 10px;
     text-align: center;
@@ -201,7 +201,7 @@ a:hover {
 
 #about #panel #name {
     position: absolute;
-    color: rgba(255, 255, 255);
+    color: rgb(255, 255, 255);
     font-size: 1.5em;
     font-weight: 400;
     top: 33%;
@@ -237,7 +237,7 @@ a:hover {
 
 #about #panel #documents #title {
     position: absolute;
-    color: rgba(62, 190, 211);
+    color: rgb(62, 190, 211);
     font-size: 1.25em;
     font-weight: 400;
     left: 5%;
@@ -245,165 +245,22 @@ a:hover {
 
 #about #panel #documents #links {
     position: absolute;
-    color: rgba(62, 190, 211);
+    color: rgb(62, 190, 211);
     width: 100%;
     top: 10%;
-}
-
-#mods {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: f5f5f5;
-    padding: 1em 0 10em 0;
-}
-
-#mods .mod.button {
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    width: 500px;
-    height: 150px;
-    background-color: rgba(255, 255, 255, 0.6);
-    backdrop-filter: blur(50px);
-    border-radius: 10px;
-    text-align: center;
-    transform: scale(1.0);
-    transition: 0.5s;
-}
-
-#mods .mod.button:hover {
-    transform: scale(1.05);
-    transition: 0.5s;
-}
-
-#mods .mod.button #logo {
-    position: absolute;
-    top: 15%;
-    left: 5%;
-}
-
-#mods .mod.button #logo img {
-    width: 100px;
-    height: 100px;
-    border-radius: 10px;
-}
-
-#mods .mod.button #title {
-    position: absolute;
-    color: rgba(255, 255, 255);
-    font-size: 1.5em;
-    font-weight: 600;
-    top: 15%;
-    text-indent: 20%;
-    white-space: nowrap;
-}
-
-#mods .mod.button #info {
-    position: absolute;
-    color: rgba(255, 255, 255);
-    font-size: 1.0em;
-    font-weight: 200;
-    top: 40%;
-    text-indent: 20%;
-    white-space: nowrap;
-}
-
-#mods .mod.button #version {
-    position: absolute;
-    color: rgba(255, 255, 255);
-    font-size: 0.9em;
-    font-weight: 200;
-    top: 55%;
-    text-indent: 20%;
-    white-space: nowrap;
-}
-
-#mods .mod.button #date {
-    position: absolute;
-    color: rgba(255, 255, 255);
-    font-size: 0.9em;
-    font-weight: 200;
-    top: 70%;
-    text-indent: 20%;
-    white-space: nowrap;
-}
-
-#popup {
-    display: none;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 9999;
-}
-
-#popup popup {
-    position: absolute;
-    width: 600px;
-    height: 300px;
-    background-color: rgba(255, 255, 255, 0.6);
-    backdrop-filter: blur(50px);
-    border-radius: 10px;
-    text-align: center;
-    transform: scale(1.0);
-    transition: 0.5s;
-}
-
-#popup popup #close {
-    cursor: pointer;
-    float: right;
-    color: #aaa;
-    font-size: 2.0em;
-    font-weight: 600;
-    width: 50px;
-    height: 50px;
-    transition: 0.5s;
-}
-
-#popup popup #close:hover {
-    color: rgba(255, 255, 255);
-    transition: 0.5s;
-}
-
-#popup popup #panel {
-    position: absolute;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 50%;
-    top: 10%;
-}
-
-#popup popup #panel #title {
-    position: absolute;
-    color: rgba(62, 190, 211);
-    font-size: 1.25em;
-    font-weight: 400;
-    left: 5%;
-}
-
-#popup popup #panel #links {
-    position: absolute;
-    color: rgba(62, 190, 211);
-    width: 100%;
-    top: 25%;
 }
 
 #footer {
-    background-color: rgba(230, 230, 230);
-    padding: 1em 0 1em 0;
+    position: absolute;
+    width: 100%;
+    background-color: rgb(230, 230, 230);
+    padding: 0.5em 0 0.5em 0;
     text-align: center;
+    margin-bottom: 100%;
 }
 
 #footer .copyright {
-    color: rgba(153 153 153);
+    color: rgb(153 153 153);
     font-weight: 200;
     line-height: 1em;
     margin: 1em 0 1em 0;
@@ -421,7 +278,7 @@ a:hover {
     }
 
     #header #panel #nav #button a:hover {
-        color: rgba(62, 190, 211);
+        color: rgb(62, 190, 211);
     }
 
     #about #panel {

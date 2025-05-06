@@ -1,0 +1,472 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background-image: url("/images/background.png");
+    background-size: auto;
+    background-attachment: fixed;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+a {
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+}
+
+a:hover {
+    color: rgb(62, 190, 211);
+    transition: 0.5s;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(62, 190, 211);
+    border-radius: 8px;
+}
+
+.button.line {
+    cursor: pointer;
+    display: inline-block;
+    color: rgba(255, 255, 255);
+    box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0);
+    height: 3em;
+    line-height: 3em;
+    padding: 0 2em 0 2em;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+.button.line:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: 0.2s;
+}
+
+#header {
+    position: absolute;
+    color: #bbb;
+    width: 100%;
+    height: 3.25em;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(50px);
+    line-height: 3.25em;
+    z-index: 9998;
+}
+
+#header #panel {
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+#header #panel:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    transition: 0.5s;
+}
+
+#header #panel a {
+    color: rgb(255, 255, 255);
+}
+
+#header #panel h1 {
+    color: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    left: 1.25em;
+    transition: 0.3s;
+}
+
+#header #panel:hover h1 {
+    color: rgb(255, 255, 255);
+    transition: 0.3s;
+}
+
+#header #panel #nav {
+    position: absolute;
+    top: 0;
+    right: 1em;
+}
+
+#header #panel #nav a {
+    color: rgb(255, 255, 255);
+    padding: 0 1em 0 2em;
+    text-decoration: none;
+}
+
+#header #panel #nav #button {
+    cursor: pointer;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+#header #panel #nav #button .line {
+    display: block;
+    position: relative;
+    width: 3em;
+    height: 4px;
+    top: -10px;
+    left: 25px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    transform: scale3d(0, 1, 1);
+    transition: 0.5s;
+}
+
+#mods {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: calc(3.25em + 40vh) 0 60vh 0;
+}
+
+#mods #panel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 85%;
+    height: 400px;
+    text-align: center;
+    transform: scale(1.0);
+    transition: 0.5s;
+}
+
+#mods #panel #title {
+    position: absolute;
+    color: rgba(62, 190, 211);
+    font-size: 1.25em;
+    font-weight: 600;
+    top: 5%;
+}
+
+#mods #panel #avaritianeo {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    max-width: 800px;
+    top: 15%;
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(50px);
+    border-radius: 10px;
+    text-align: center;
+    transform: scale(1.0);
+    transition: 0.5s;
+}
+
+#mods #panel #avaritianeo:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+#mods #panel #avaritianeo #modLogo {
+    position: absolute;
+    top: 15%;
+    left: 5%;
+}
+
+#mods #panel #avaritianeo #modLogo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+#mods #panel #avaritianeo #modTitle {
+    position: absolute;
+    color: rgba(255, 255, 255);
+    font-size: 1.5em;
+    font-weight: 600;
+    top: 15%;
+    left: calc(10% + 100px);
+    white-space: nowrap;
+}
+
+#mods #panel #avaritianeo #modInfo {
+    position: absolute;
+    color: rgba(255, 255, 255);
+    font-size: 1.0em;
+    font-weight: 200;
+    top: 40%;
+    left: calc(10% + 100px);
+    white-space: nowrap;
+}
+
+#mods #panel #avaritianeo #fabricLoader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    color: rgba(255, 255, 255);
+    font-size: 1.0em;
+    font-weight: 200;
+    width: 100px;
+    height: 25px;
+    bottom: 20%;
+    right: 2%;
+    background-color: rgb(62, 190, 211);
+    border-radius: 15px;
+    white-space: nowrap;
+}
+
+#mods #panel #avaritianeo #neoForgeLoader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    color: rgba(255, 255, 255);
+    font-size: 1.0em;
+    font-weight: 200;
+    width: 100px;
+    height: 25px;
+    bottom: 20%;
+    right: calc(3% + 100px);
+    background-color: rgb(62, 190, 211);
+    border-radius: 15px;
+    white-space: nowrap;
+}
+
+#mods #panel #avaritianeo #forgeLoader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    color: rgba(255, 255, 255);
+    font-size: 1.0em;
+    font-weight: 200;
+    width: 100px;
+    height: 25px;
+    bottom: 20%;
+    right: calc(4% + 200px);
+    background-color: rgb(62, 190, 211);
+    border-radius: 15px;
+    white-space: nowrap;
+}
+
+#mods #panel #blooddisplayer {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    max-width: 800px;
+    top: 55%;
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(50px);
+    border-radius: 10px;
+    text-align: center;
+    transform: scale(1.0);
+    transition: 0.5s;
+}
+
+
+#mods #panel #blooddisplayer:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+#mods #panel #blooddisplayer #modLogo {
+    position: absolute;
+    top: 15%;
+    left: 5%;
+}
+
+#mods #panel #blooddisplayer #modLogo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+#mods #panel #blooddisplayer #modTitle {
+    position: absolute;
+    color: rgba(255, 255, 255);
+    font-size: 1.5em;
+    font-weight: 600;
+    top: 15%;
+    left: calc(10% + 100px);
+    white-space: nowrap;
+}
+
+#mods #panel #blooddisplayer #modInfo {
+    position: absolute;
+    color: rgba(255, 255, 255);
+    font-size: 1.0em;
+    font-weight: 200;
+    top: 40%;
+    left: calc(10% + 100px);
+    white-space: nowrap;
+}
+
+#mods #panel #blooddisplayer #neoForgeLoader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    color: rgba(255, 255, 255);
+    font-size: 1.0em;
+    font-weight: 200;
+    width: 100px;
+    height: 25px;
+    bottom: 20%;
+    right: 2%;
+    background-color: rgb(62, 190, 211);
+    border-radius: 15px;
+    white-space: nowrap;
+}
+
+#mods #panel #blooddisplayer #forgeLoader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    color: rgba(255, 255, 255);
+    font-size: 1.0em;
+    font-weight: 200;
+    width: 100px;
+    height: 25px;
+    bottom: 20%;
+    right: calc(3% + 100px);
+    background-color: rgb(62, 190, 211);
+    border-radius: 15px;
+    white-space: nowrap;
+}
+
+#popup {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+
+#popup popup {
+    display: none;
+    position: absolute;
+    width: 400px;
+    height: 225px;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(50px);
+    border-radius: 10px;
+    text-align: center;
+    transform: scale(1.0);
+    transition: 0.5s;
+}
+
+#popup popup #close {
+    cursor: pointer;
+    position: absolute;
+    color: #aaa;
+    font-size: 2em;
+    font-weight: 600;
+    width: 50px;
+    height: 50px;
+    right: 0;
+    transition: 0.5s;
+    z-index: 10000;
+}
+
+#popup popup #close:hover {
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+}
+
+#popup popup #panel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 5%;
+}
+
+#popup popup #panel #title {
+    position: absolute;
+    color: rgb(62, 190, 211);
+    font-size: 1.25em;
+    font-weight: 400;
+    left: 5%;
+    top: 3%;
+}
+
+#popup popup #panel #links {
+    position: absolute;
+    color: rgb(62, 190, 211);
+    width: 100%;
+    top: 20%;
+}
+
+#footer {
+    position: absolute;
+    width: 100%;
+    background-color: rgb(230, 230, 230);
+    padding: 0.5em 0 0.5em 0;
+    text-align: center;
+    margin-bottom: 100%;
+}
+
+#footer .copyright {
+    color: rgb(153 153 153);
+    font-weight: 200;
+    line-height: 1em;
+    margin: 1em 0 1em 0;
+}
+
+@media screen and (max-width: 600px) {
+    #mods #panel {
+        width: 100%;
+    }
+    #popup popup {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #header #panel #nav #button .line {
+        display: none;
+    }
+
+    #header #panel #nav #button a:hover {
+        color: rgba(62, 190, 211);
+    }
+
+    #mods .mod.button {
+        width: 100%;
+    }
+}
+
+@media screen and (max-height: 500px) {
+    #mods #panel #title {
+        display: none;
+    }
+}

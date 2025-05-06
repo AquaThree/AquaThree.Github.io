@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>AquaThree's Blog | Mods </title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../css/mods.css" />
+</head>
+
+<body>
+    <div>
+        <!-- Header -->
+        <div id="header">
+            <div id="panel">
+                <h1><a>AquaThree's</a> Blog</h1>
+                <div id="nav">
+                    <div id="button">
+                        <a href="../" onmouseover="openButtonAnim('line1')" onmouseout="closeButtonAnim('line1')">主页</a>
+                        <div class="line" id="line1"></div>
+                    </div>
+                    <div id="button">
+                        <a href="../mods/" onmouseover="openButtonAnim('line2')" onmouseout="closeButtonAnim('line2')">模组</a>
+                        <div class="line" id="line2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Mods -->
+        <div id="mods">
+            <div id="panel">
+                <div id="title">
+                    模组列表
+                </div>
+                <a id="avaritianeo" onclick="clickOpenPopupButton(0)" target="_blank"
+                    title="无尽贪婪高版本的重制版本。">
+                    <div id="modLogo">
+                        <img src="../images/avaritianeo.png">
+                    </div>
+                    <div id="modTitle">
+                        无尽贪婪Neo
+                    </div>
+                    <div id="modInfo">
+                        一个非官方的无尽贪婪高版本的重制版本。
+                    </div>
+                    <div id="fabricLoader">
+                        Fabric
+                    </div>
+                    <div id="neoForgeLoader">
+                        NeoForge
+                    </div>
+                    <div id="forgeLoader">
+                        Forge
+                    </div>
+                </a>
+                <br>
+                <a id="blooddisplayer" onclick="clickOpenPopupButton(1)" target="_blank"
+                    title="为生物添加了血量和护甲值显示。">
+                    <div id="modLogo">
+                        <img src="../images/avatar.png">
+                    </div>
+                    <div id="modTitle">
+                        血量显示器
+                    </div>
+                    <div id="modInfo">
+                        一个为生物添加了血量和护甲值显示的模组。
+                    </div>
+                    <div id="forgeLoader">
+                        Forge
+                    </div>
+                    <div id="neoForgeLoader">
+                        NeoForge
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- Popup -->
+        <div id="popup">
+            <popup id="avaritianeo">
+                <div id="close" onclick="clickClosePopupButton(0)">×</div>
+                <div id="panel">
+                    <div id="title">
+                        相关链接：
+                    </div>
+                    <div id="links">
+                        <a href="https://www.mcmod.cn/class/15521.html" target="_blank">Mod百科</a>
+                        <br>
+                        <a href="https://github.com/AquaThree/AvaritiaNeo" target="_blank">Github</a>
+                        <br>
+                        <a href="https://pan.baidu.com/s/1yr6i9dUnNUdDI9MhIGQ4_Q?pwd=bty7" target="_blank">百度网盘</a>
+                        <br>
+                        <a href="https://www.curseforge.com/minecraft/mc-mods/avaritianeo"
+                            target="_blank">CurseForge</a>
+                        <br>
+                        <a href="https://modrinth.com/mod/avaritianeo" target="_blank">Modrinth</a>
+                    </div>
+                </div>
+            </popup>
+            <popup id="blooddisplayer">
+                <div id="close" onclick="clickClosePopupButton(1)">×</div>
+                <div id="panel">
+                    <div id="title">
+                        相关链接：
+                    </div>
+                    <div id="links">
+                        <a href="https://www.mcmod.cn/class/5400.html" target="_blank">Mod百科</a>
+                        <br>
+                        <a href="https://github.com/AquaThree/BloodDisplayer" target="_blank">Github</a>
+                        <br>
+                        <a href="https://pan.baidu.com/s/17wdNL0wz6TqP4SeuXJfJHw?pwd=axma" target="_blank">百度网盘</a>
+                    </div>
+                </div>
+            </popup>
+        </div>
+        <!-- Footer -->
+        <div id="footer">
+            <div class="copyright">
+                <h1>&copy; 2023 Aqua3.</h1>
+            </div>
+        </div>
+    </div>
+    <!-- Scripts -->
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
