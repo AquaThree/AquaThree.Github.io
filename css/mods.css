@@ -453,6 +453,17 @@ a:hover {
     #mods #panel {
         width: 100%;
     }
+
+    #mods #panel #avaritianeo:hover {
+        transform: scale(1.0);
+        transition: 0.5s;
+    }
+
+    #mods #panel #blooddisplayer:hover {
+        transform: scale(1.0);
+        transition: 0.5s;
+    }
+
     #popup popup {
         width: 100%;
     }
