@@ -1,0 +1,40 @@
+{
+    "404": {
+        "title": "404 Not Found",
+        "description": "404",
+        "tags": {
+            "date": {
+                "icon": "/svg/date.svg",
+                "text": "创建于 2025/8/8"
+            },
+            "update": {
+                "icon": "/svg/update.svg",
+                "text": "更新于 2025/8/8"
+            },
+            "error": {
+                "icon": "/svg/error.svg",
+                "text": "404"
+            }
+        },
+        "link": "file=/md/404.md"
+    },
+    "HelloWorld": {
+        "title": "Java-你好世界！",
+        "description": "创建并编译一个Java文件，并使其输出HelloWorld.",
+        "tags": {
+            "date": {
+                "icon": "/svg/date.svg",
+                "text": "创建于 2025/8/8"
+            },
+            "update": {
+                "icon": "/svg/update.svg",
+                "text": "更新于 2025/8/8"
+            },
+            "codeLanguage": {
+                "icon": "/svg/tag.svg",
+                "text": "Java"
+            }
+        },
+        "link": "file=/md/helloworld.md"
+    }
+}

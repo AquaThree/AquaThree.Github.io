@@ -1,0 +1,240 @@
+@import url("./main.css");
+
+#document {
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+    min-height: calc(100vh - 50px);
+    padding: 10vh 0 10vh 0;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+#document mod {
+    display: flex;
+    width: 600px;
+    min-height: 150px;
+    max-width: 100vw;
+    max-height: 100%;
+    margin: 0 0 20px 0;
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(50px);
+    border-radius: 10px;
+    transform: scale(1.0);
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+#document mod.hidden {
+    display: none;
+}
+
+#document mod logo {
+    display: flex;
+    padding: 0 24px 0 24px;
+    align-items: center;
+}
+
+#document mod logo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+#document mod other {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#document mod other top {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: start;
+    text-align: left;
+    align-items: start;
+}
+
+#document mod other top h1 {
+    color: rgba(255, 255, 255);
+    font-size: 24px;
+    font-weight: 600;
+    padding: 0 0 5px 0;
+}
+
+#document mod other top h2 {
+    color: rgba(255, 255, 255);
+    font-size: 16px;
+    font-weight: 200;
+    word-wrap: break-word;
+}
+
+#document mod other bottom {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    align-items: start;
+}
+
+#document mod other bottom a {
+    cursor: pointer;
+    display: flex;
+    color: rgba(255, 255, 255);
+    font-size: 16px;
+    font-weight: 200;
+    padding: 5px 5px 5px 5px;
+    margin: 0 5px 0 0;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    white-space: nowrap;
+    transition: 0.2s;
+}
+
+#document mod other bottom a:hover {
+    padding: 5px 12.5px 5px 12.5px;
+    transition: 0.2s;
+}
+
+#document mod other bottom a img {
+    width: 25px;
+    height: 25px;
+}
+
+#document #panel {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    max-width: 100vw;
+    max-height: 100%;
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(50px);
+    border-radius: 10px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    transform: scale(1.0);
+    transition: 0.5s;
+}
+
+#document #panel #md {
+    display: flex;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    padding: 40px 40px 40px 40px;
+    justify-content: start;
+    text-align: start;
+    align-items: start;
+}
+
+#document #panel #md a {
+    color: rgb(62, 190, 211);
+}
+
+#document #panel #md details {
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    max-width: 80vw;
+    padding: 6px 0 6px 0;
+    margin: 2px 0 2px 0;
+    background-color: rgb(62, 190, 211);
+    border-radius: 10px;
+    justify-content: start;
+    text-align: start;
+    align-items: center;
+    transition: 0.2s;
+}
+
+#document #panel #md details:hover {
+    cursor: pointer;
+    box-shadow: inset 0 0 0 2px rgb(255, 255, 255);
+}
+
+#document #panel #md details::before {
+    content: "";
+    flex: 0;
+    margin: 0 0 0 10px;
+    border-width: 7px 7px 0 7px;
+    border-style: solid;
+    border-color: transparent;
+    border-top-color: rgb(255, 255, 255);
+    transform: rotate(-90deg);
+    transition: 0.2s;
+}
+
+#document #panel #md details[open]::before {
+    content: "";
+    transform: rotate(0deg);
+    transition: 0.2s;
+}
+
+#document #panel #md details summary {
+    flex: 1;
+    font-weight: 200;
+    width: 100%;
+    height: 100%;
+    margin: 0 20px 0 10px;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+#document #panel #md details summary::marker {
+    content: "";
+}
+
+#document #panel #md details img {
+    width: 100%;
+    height: 100%;
+}
+
+#document #panel #md pre {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: start;
+    text-align: start;
+    align-items: start;
+}
+
+#document #panel #md pre code {
+    width: 500px;
+    max-width: 80vw;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(50px);
+    border-radius: 10px;
+}
+
+#document #panel #md pre copy {
+    display: none;
+}
+
+#document #panel #md pre:hover copy {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    text-align: end;
+    align-items: center;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+#document #panel #md pre copy a {
+    color: rgb(255, 255, 255);
+    padding: 5px 5px 5px 5px;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+#document #panel #md pre:hover copy a:hover {
+    cursor: pointer;
+    color: rgb(62, 190, 211);
+    transition: 0.5s;
+}

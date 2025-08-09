@@ -1,0 +1,60 @@
+{
+    "AvaritiaNeo": {
+        "icon": "/images/mods/avaritianeo.png",
+        "modid": "avaritia",
+        "name": "无尽贪婪Neo",
+        "description": "该模组是非官方的 Avaritia 高版本重制模组。",
+        "version": {
+            "forge": ["1.20", "1.20.1"],
+            "fabric": ["1.21", "1.21.1"],
+            "neoforge": ["1.20.1", "1.20.4", "1.21", "1.21.1", "1.21.3", "1.21.4"]
+        },
+        "loaderColor": {
+            "forge": "rgb(62, 190, 211)",
+            "fabric": "rgb(62, 190, 211)",
+            "neoforge": "rgb(62, 190, 211)"
+        },
+        "links": {
+            "Mod百科": {
+                "icon": "/images/modwiki.png",
+                "link": "https://www.mcmod.cn/class/15521.html"
+            },
+            "CurseForge": {
+                "icon": "/svg/curseforge.svg",
+                "link": "https://www.curseforge.com/minecraft/mc-mods/avaritianeo"
+            },
+            "Modrinth": {
+                "icon": "/svg/modrinth.svg",
+                "link": "https://modrinth.com/mod/avaritianeo"
+            }
+        }
+    },
+    "TheTitansNeo": {
+        "icon": "/images/mods/thetitansneo.png",
+        "modid": "thetitansneo",
+        "name": "泰坦生物Neo",
+        "description": "该模组是非官方的 TheTitans 高版本重制模组。",
+        "version": {
+            "neoforge": ["1.21", "1.21.1"]
+        },
+        "loaderColor": {
+            "forge": "rgb(62, 190, 211)",
+            "fabric": "rgb(62, 190, 211)",
+            "neoforge": "rgb(62, 190, 211)"
+        },
+        "links": {
+            "Mod百科": {
+                "icon": "/images/modwiki.png",
+                "link": "https://www.mcmod.cn/class/20941.html"
+            },
+            "CurseForge": {
+                "icon": "/svg/curseforge.svg",
+                "link": "https://www.curseforge.com/minecraft/mc-mods/thetitansneo"
+            },
+            "Modrinth": {
+                "icon": "/svg/modrinth.svg",
+                "link": "https://modrinth.com/mod/avaritianeo"
+            }
+        }
+    }
+}

@@ -1,0 +1,105 @@
+@import url("./main.css");
+
+mods {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-width: 100%;
+    min-height: calc(100vh - 50px);
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+mods filter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+mods mod {
+    display: flex;
+    width: 850px;
+    min-height: 150px;
+    max-width: 95vw;
+    max-height: 100%;
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    transform: scale3d(1, 1, 1);
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+mods mod.hidden {
+    transform: scale3d(1, 0, 1);
+    transition: 0.3s;
+}
+
+mods mod:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+mods mod logo {
+    display: flex;
+    padding: 0 24px 0 24px;
+    align-items: center;
+}
+
+mods mod logo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+mods mod other {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+mods mod other top {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 20px 20px 20px 20px;
+    justify-content: start;
+    text-align: start;
+    align-items: start;
+}
+
+mods mod other top h1 {
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-weight: 600;
+}
+
+mods mod other top h2 {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 200;
+    word-wrap: break-word;
+}
+
+mods mod other bottom {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding: 20px 20px 20px 20px;
+    text-align: start;
+    align-items: start;
+}
+
+mods mod other bottom a {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 200;
+    padding: 5px 12.5px 5px 12.5px;
+    border-radius: 15px;
+    white-space: nowrap;
+}
